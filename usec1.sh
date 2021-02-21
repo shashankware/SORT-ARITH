@@ -34,3 +34,10 @@ record[key3]=$val3
 record[key4]=$val4
 echo ${record[@]}
 
+sum=1
+for i in ${record[@]}
+do
+  arr[$sum]=$i
+ sum=$(($sum+1))
+done
+
