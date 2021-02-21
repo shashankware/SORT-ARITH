@@ -11,3 +11,6 @@ echo $val2
 val3=$(($(($c + $a)) / $b))
 echo $val3
 
+val4=$(($(($a % $a)) + $b))
+echo $val4
+
