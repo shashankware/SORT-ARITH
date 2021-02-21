@@ -41,3 +41,21 @@ do
  sum=$(($sum+1))
 done
 
+
+8.	for((i=0;i<${#arr[@]};i++))
+do
+ for((j=0;j<${#arr[@]};j++))
+do
+  if [[ ${arr[$j]} -lt ${arr[$i]} ]]
+then
+ temp=${arr[$i]}
+arr[$i]=${arr[$j]}
+arr[$j]=${temp}
+fi
+done
+done
+for n in "${arr[@]}"
+do
+echo "$n"
+done
+
